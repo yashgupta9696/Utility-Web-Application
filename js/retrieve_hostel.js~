@@ -1,0 +1,20 @@
+"use strict";
+
+$(function () {
+  var config = {
+    apiKey: "AIzaSyAnraAxIGcHzllgame0p02Emvm7AOMvZs4",
+    authDomain: "hostel-3f4b3.firebaseapp.com",
+    databaseURL: "https://hostel-3f4b3.firebaseio.com",
+    storageBucket: "hostel-3f4b3.appspot.com",
+    messagingSenderId: "793294235692"
+  };
+  firebase.initializeApp(config);
+  
+ var rootRef= firebase.database().ref();
+ rootRef.on("child_added", function(snapshot) {
+  var newPost = snapshot.val();
+  var message= newPost.message;
+  $("#table_body").append("<tr><td>"+message+"</td></tr>");
+  
+});
+});
