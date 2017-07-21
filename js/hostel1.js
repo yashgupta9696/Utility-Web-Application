@@ -2,9 +2,9 @@
 
 $(function () {
   var config = {
-   apiKey: "AIzaSyAyYpaxW36mggmqBrURVgKGLTzGi7NxOqg",
-    authDomain: "hostel-6e8c7.firebaseapp.com",
-    databaseURL: "https://hostel-6e8c7.firebaseio.com",
+   apiKey: "*",
+    authDomain: "*",
+    databaseURL: "*",
     projectId: "hostel-6e8c7",
     storageBucket: "hostel-6e8c7.appspot.com",
     messagingSenderId: "692395961556"
