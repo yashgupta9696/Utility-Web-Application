@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Form Firebase</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style_image.css">
+
+</head>
+
+<body>
+  <div class="container">
+   <div class="row">
+     <div class="col-xs-12">
+	 <h2 class="headings"> Image Uploading Portal </h2>
+	 <h3 class="headings"> Upload timetable, mess timings, new dishes, etc.</h3>
+       <form class="js-form">  
+			<label class="upload-group">
+			<input type="file" id="file" class="upload-group" ></input>
+			</label>
+			<button type="button" class="btn btn-primary" id="uploadButton" onclick="uploadFile()">Upload file</button>	
+			  
+		   </div>
+			   
+	   </form>
+	    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://www.gstatic.com/firebasejs/3.7.1/firebase.js'></script>
+  
+  <script type="text/javascript" >var selectedFile;
+$(function () {
+  
+     var config = {
+    apiKey: "AIzaSyAnraAxIGcHzllgame0p02Emvm7AOMvZs4",
+    authDomain: "hostel-3f4b3.firebaseapp.com",
+    databaseURL: "https://hostel-3f4b3.firebaseio.com",
+    storageBucket: "hostel-3f4b3.appspot.com",
+    messagingSenderId: "793294235692"
+  };
+  firebase.initializeApp(config);
+ });
+  
+ $('#file').on('change', function(event){
+	 selectedFile = event.target.files[0];
+ });
+ function uploadFile() {
+	 var filename = selectedFile.name;
+	 var storageRef = firebase.storage().ref('/dogImages' + filename);
+	 var uploadTask = storageRef.put(selectedFile);
+	 uploadTask.on('state_changed', function(snapshot){
+	 }, function(error){
+	 }, function() {
+		 
+		 var downloadURL = uploadTask.snapshot.DownloadURL;
+		 console.log(downloadURL);
+	 });	 
+ }</script>
+	   
+     </div>
+  </div>
+</div>
+ 
+
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
