@@ -2,8 +2,8 @@
 
 $(function () {
   var config = {
-   apiKey: "AIzaSyAnraAxIGcHzllgame0p02Emvm7AOMvZs4",
-    authDomain: "hostel-3f4b3.firebaseapp.com",
+   apiKey: "*",
+    authDomain: "*",
     databaseURL: "https://hostel-3f4b3.firebaseio.com",
     storageBucket: "hostel-3f4b3.appspot.com",
     messagingSenderId: "793294235692"
