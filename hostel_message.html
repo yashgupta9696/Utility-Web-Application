@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Form Firebase</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/hostel_sendmessage.css">
+
+  
+</head>
+<style>
+
+label{
+  font-size: 25px;
+  color: white;
+  
+}
+
+
+body{
+  background-color: rgb(40, 52, 61);
+}
+
+</style>
+
+<body>
+  <div class="container">
+   <div class="row">
+     <div class="col-xs-12">
+       <form class="js-form">  
+				<div class="form-group">
+				<h2><label for="js-message">Enter Message To be Sent To Hostel Students</label></h2>
+           <textarea id="js-message" rows="10" cols="70" class="form-control"></textarea>
+           </div>
+              <button id="js-submit" class="btn btn-primary" >Submit</button>
+			  <button id="js-back" class="btn btn-secondary"  >Go back</button>
+			  <button id="js-retrieve" class="btn btn-secondary"  >Click here to check new notification</button>
+		   </div>
+			<h1 id = "headings"><a href="hostel_image.html">To upload an image click here !</a></h1>
+			
+			
+	   </form>
+	   
+	   
+     </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://www.gstatic.com/firebasejs/3.7.1/firebase.js'></script>
+
+    <script src="js/hostel2.js"></script>
+
+</body>
+</html>

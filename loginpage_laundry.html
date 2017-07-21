@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login-Laundry</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<style>
+body{
+  background-color: rgb(40, 52, 61);
+}
+
+
+label{
+  font-size: 25px;
+  color: white;
+  
+}
+
+
+
+ 
+div {
+
+   
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+
+}
+
+
+input[type=email], select {
+    width: 100%;
+    padding: 15px 15px;
+    display: inline-block;
+    border: 3px solid skyblue;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 1px 1px;
+    display: inline-block;
+    border: 3px solid skyblue;
+    border-radius: 50px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    text-align: right;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+</style>
+
+
+<body>
+  <div class="container">
+   <div class="row">
+     <div class="col-xs-12">
+	 <p><font face="verdana" color="white" size="5" align="right">WELCOME TO LOGIN PAGE FOR LAUNDRY ADMIN!</font></p>
+
+	 
+       <form class="js-form">
+         
+         
+         <div class="form-group">
+           
+           <label for="js-email">Email</label>
+           <input type="email" id="js-email" class="form-control"/>
+         </div>
+                 <div class="form-group">
+           <label for="js-password">Password</label>
+           <input type="password" id="js-password" class="form-control"/>
+           </div>
+        
+                 
+             <div class="wrapper">
+    
+
+
+
+			 <button id="js-submit" class="btn btn-primary" style="height:50px; width:200px" >Login</button>
+
+
+			</div>
+
+       </form>
+     </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://www.gstatic.com/firebasejs/3.7.1/firebase.js'></script>
+
+    <script src="js/laundry_signin.js"></script>
+
+</body>
+</html>
