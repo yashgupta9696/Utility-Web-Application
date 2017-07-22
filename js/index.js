@@ -2,9 +2,9 @@
 
 $(function () {
   var config = {
-    apiKey: "AIzaSyBmRUFvA9XGzOOlL8EFEZrqNSaojAI_rHw",
-    authDomain: "myauthdemo-7fc8c.firebaseapp.com",
-    databaseURL: "https://myauthdemo-7fc8c.firebaseio.com",
+    apiKey: "<your API key>",
+    authDomain: "*",
+    databaseURL: "*",
     storageBucket: "myauthdemo-7fc8c.appspot.com",
     messagingSenderId: "258949061084"
   };
