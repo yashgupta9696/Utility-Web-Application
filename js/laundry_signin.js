@@ -2,7 +2,7 @@
 
 $(function () {
   var config = {
-   apiKey: "AIzaSyCXXwYXAo1lxabFRJLHeQjLRGZM34jqzs4",
+   apiKey: "*",
     authDomain: "laundry-aa8bf.firebaseapp.com",
     databaseURL: "https://laundry-aa8bf.firebaseio.com",
     storageBucket: "laundry-aa8bf.appspot.com",
