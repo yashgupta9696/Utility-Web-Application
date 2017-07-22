@@ -2,7 +2,7 @@
 
 $(function () {
   var config = {
-    apiKey: "AIzaSyBmRUFvA9XGzOOlL8EFEZrqNSaojAI_rHw",
+    apiKey: "*",
     authDomain: "myauthdemo-7fc8c.firebaseapp.com",
     databaseURL: "https://myauthdemo-7fc8c.firebaseio.com",
     storageBucket: "myauthdemo-7fc8c.appspot.com",
